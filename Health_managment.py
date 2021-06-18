@@ -2,7 +2,7 @@ import datetime
 def gettime():
     return datetime.datetime.now()
 def log():
-    b = int(input("Enter a number 1 for Harry 2 for Rifaz"))
+    b = int(input("Enter a number 1 for Harry 2 for Jhon"))
     if b==1:
         c = int(input("Enter a number 1 for food 2 for exercise"))
         if c==1:
@@ -36,7 +36,7 @@ def log():
             while k>0:
                 l = input()
             
-                with open("Rifazfood.txt","a") as har:
+                with open("Jhonfood.txt","a") as har:
                     har.write(str([str(gettime())])+":"+l+"\n")
                     k=k -1
             print("Items successfully Added")           
@@ -46,7 +46,7 @@ def log():
             while m>0:
                 n = input()
             
-                with open("Rifazexe.txt","a") as har:
+                with open("Jhonexe.txt","a") as har:
                     
                     har.write(str([str(gettime())])+":"+n+"\n")
                     m=m-1
@@ -57,7 +57,7 @@ def log():
             print("invalid Enter")          
             
 def retrieve():
-                    f = int(input("Enter a number 1 for Harry 2 For Rifaz"))
+                    f = int(input("Enter a number 1 for Harry 2 For Jhon"))
                     if f==1:
                         g = int(input("Enter A number 1 for food 2 for exercise"))
                         if g==1:
@@ -71,10 +71,10 @@ def retrieve():
                     elif f==2:
                         o = int(input("Enter A number 1 for food 2 for exercise"))
                         if o==1:
-                             with open("Rifazfood.txt") as hf:
+                             with open("Jhonfood.txt") as hf:
                                  print(hf.read())
                         elif o==2:
-                             with open("Rifazexe.txt") as hf:
+                             with open("Jhonexe.txt") as hf:
                                  print(hf.read())       
                                  
                         else:
