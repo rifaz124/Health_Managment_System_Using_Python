@@ -13,3 +13,9 @@ Use This Software in termux by using below command
  $ ls 
  $ python3 health_management.py
 ```
+## Features
+
+- free to use
+- user friendly
+- stores current date with time
+- used for diet management
